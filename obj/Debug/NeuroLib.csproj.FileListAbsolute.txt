@@ -1,0 +1,10 @@
+c:\users\пользователь\documents\visual studio 2017\Projects\NeuroLib\NeuroLib\bin\Debug\NeuroLib.dll
+c:\users\пользователь\documents\visual studio 2017\Projects\NeuroLib\NeuroLib\bin\Debug\NeuroLib.pdb
+c:\users\пользователь\documents\visual studio 2017\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.csprojResolveAssemblyReference.cache
+c:\users\пользователь\documents\visual studio 2017\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.dll
+c:\users\пользователь\documents\visual studio 2017\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.pdb
+C:\Users\User\OneDrive\Projects\NeuroLib\NeuroLib\bin\Debug\NeuroLib.dll
+C:\Users\User\OneDrive\Projects\NeuroLib\NeuroLib\bin\Debug\NeuroLib.pdb
+C:\Users\User\OneDrive\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.csprojResolveAssemblyReference.cache
+C:\Users\User\OneDrive\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.dll
+C:\Users\User\OneDrive\Projects\NeuroLib\NeuroLib\obj\Debug\NeuroLib.pdb
