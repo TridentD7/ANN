@@ -45,8 +45,8 @@ namespace NeuroLib
         const double START_RANGE = 0.5;
 
         public NAF _actFunc;
-        public double _Value=0;
-        public double [] _Weights=null;
+        public double neuronOut=0;
+        public double [] synapsWeights=null;
         private CNeuron [] _Pointer=null;
         private int _N = 0;
 
@@ -60,10 +60,10 @@ namespace NeuroLib
             {
                 _N = prevLayer.Count();
                 _Pointer = prevLayer;
-                _Weights = new double[_N+1];
-                for (int i = 0; i < _Weights.Length; i++)
+                synapsWeights = new double[_N+1];
+                for (int i = 0; i < synapsWeights.Length; i++)
                 {
-                    _Weights[i] = -START_RANGE+rnd.NextDouble()* 2*START_RANGE;
+                    synapsWeights[i] = -START_RANGE+rnd.NextDouble()* 2*START_RANGE;
                 }
             }
         }
@@ -78,15 +78,15 @@ namespace NeuroLib
         {
             if (_Pointer != null)
             {
-                _Value = 0;
+                neuronOut = 0;
 
                 for (int i = 0; i < _N; i++)
                 {
-                    _Value += _Pointer[i]._Value * _Weights[i];                 
+                    neuronOut += _Pointer[i].neuronOut * synapsWeights[i];                 
                 }
 
-                _Value += _Weights[_N];
-                _Value = _actFunc.Function(_Value);
+                neuronOut += synapsWeights[_N];
+                neuronOut = _actFunc.Function(neuronOut);
             }
             
         }

@@ -93,11 +93,11 @@ namespace NeuroLib
                         attribute.Value = "null";
                     element.Attributes.Append(attribute); // добавляем атрибут
 
-                    if (Ann._Net[i][j]._Weights != null)
-                        for (int k = 0; k < Ann._Net[i][j]._Weights.Length; k++)
+                    if (Ann._Net[i][j].synapsWeights != null)
+                        for (int k = 0; k < Ann._Net[i][j].synapsWeights.Length; k++)
                         {
                             XmlNode subElement1 = document.CreateElement("weight"); // даём имя
-                            subElement1.InnerText = Ann._Net[i][j]._Weights[k].ToString(); // и значение
+                            subElement1.InnerText = Ann._Net[i][j].synapsWeights[k].ToString(); // и значение
                             element.AppendChild(subElement1); // и указываем кому принадлежит
                         }
 

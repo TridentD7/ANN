@@ -66,13 +66,13 @@ namespace NeuroLib
             {
                 for (int j = 0; j < _Net[0].Length; j++)
                 {
-                    _Net[0][j]._Value = Normalization(Input[j], _inputMinMax[j,0], _inputMinMax[j, 1]);
+                    _Net[0][j].neuronOut = Normalization(Input[j], _inputMinMax[j,0], _inputMinMax[j, 1]);
                 }
                 ActivateNet();
                 for (int j = 0; j < _Net[_Net.Length - 1].Length; j++)
                 {
                     result[j] =DeNormalization(
-                        Normalization(_Net[_Net.Length - 1][j]._Value, 
+                        Normalization(_Net[_Net.Length - 1][j].neuronOut, 
                                _Net[_Net.Length - 1][j]._actFunc.GetMinOut(),
                                _Net[_Net.Length - 1][j]._actFunc.GetMaxOut()),
                         _outputMinMax[j,0],
